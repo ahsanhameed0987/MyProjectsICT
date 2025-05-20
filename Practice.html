@@ -16,6 +16,36 @@
                 color: azure;
                 margin-left: 20px;
             }
+            .content-wrapper{
+                display: flex;
+            }
+            .Left-Sidebar{
+                background-color: aqua;
+                display: flex;
+                flex-direction: column;
+                width: 100px;
+                gap: 10px;
+                padding: 15px;
+            }
+            .Content{
+                flex-grow: 1;
+                padding: 15px;
+            }
+            .Grid{
+                display: grid;
+                gap: 20px;
+                margin-top: 20px;
+                grid-template-columns: repeat(3,1fr);
+            }
+            .Card{
+                border: 1px solid lightgray;
+                padding: 10px;
+                text-align: center;
+                border-radius: 5px;
+                background-color: #fafafa;
+                transition: transform 0.2s;
+            }
+            
         </style>
     </head>
     <body>
@@ -31,5 +61,23 @@
                 <a href="home.html">Services</a>
             </div>
         </header>
+        <div class="content-wrapper">
+            <div class="Left-Sidebar">
+                <div>Content 1</div>
+                <div>Content 2</div>
+                <div>Content 3</div>
+        </div>
+            <div class="Content">
+            <h1>Products</h1>
+            <div class="Grid">
+                <div class="Card">
+                    <img src=https://crystalpng.com/wp-content/uploads/2024/11/air-university-logo-1.png style="height:50px; width:50px;">
+                    <h4>Podect Name</h4>
+                    <h4>Podect Price</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </body>
 </html>
